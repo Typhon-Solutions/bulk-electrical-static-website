@@ -1,0 +1,73 @@
+body {
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 , h3, h4, h5 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+section {
+  min-height: 100vh;
+  padding-bottom: 24px;
+}
+
+.section-content {
+  max-width: 720px;
+}
+
+.title-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  color: black;
+  text-decoration: none;
+}
+
+.header {
+  background-color: white;
+}
+
+#welcome {
+  background-color: #FAFAFA;
+  background: url(../img/electrician-bg.jpg) no-repeat center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+
+.welcome {
+  padding-top: 0;
+}
+
+#about {
+  background-color: #F5F5F5;
+  text-align: left;
+}
+
+#pricing {
+  background-color: #FAFAFA;
+  text-align: center;
+}
+
+#contact {
+  background-color: #F5F5F5;
+  text-align: center;
+}
+
+.contact-link {
+  /*text-decoration: none;*/
+  text-align: center;
+  vertical-align:middle;
+}
+
+/*.contact-link:hover {
+  text-decoration: underline;
+}*/
+
+.contact-value {
+  margin-left:2em;
+  font-size: 16px;
+}

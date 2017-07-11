@@ -9,40 +9,124 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+
+  <!-- Page styles -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-cyan.min.css" /> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <link rel="shortcut icon" type="image/png" href="favicon.ico">
+
 </head>
+
 <body>
-  <script>
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-  </script>
-  <div>
-    <h1>Bulk Electrical</h1>
-    <h2>Licensed electricans</h2>
-    <p>Kings Langley, New South Wales, Australia</p>
-    <p>0430 335 217</p>
-    <ul>
-      <li>domestic</li>
-      <li>commercial</li>
-      <li>industrial</li>
-    </ul>
-  </div>
-  <div class="fb-page" data-href="https://www.facebook.com/bulkelectrical/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/bulkelectrical/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/bulkelectrical/">Bulk Electrical</a></blockquote></div>
-  <script src="js/scripts.js"></script>
-  <div id="fb-root"></div>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout__title">
+                    <a class="title-link" href="#welcome">Bulk Electrical</a>
+                </span>
+            <!-- Add spacer, to align navigation to the right -->
+    <div class="mdl-layout-spacer"></div>
+    <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font mdl-layout--large-screen-only">
+                  <a class="mdl-navigation__link" href="#about">About</a>
+                  <a class="mdl-navigation__link" href="#contact">Contact</a>
+                </nav>
 
-  ga('create', 'UA-89985736-4', 'auto');
-  ga('send', 'pageview');
+            </div>
+        </header>
+        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+              <a class="mdl-navigation__link" href="#about">About</a>
+              <a class="mdl-navigation__link" href="#contact">Contact</a>
+            </nav>
+        </div>
 
-</script>
+<main class="mdl-layout__content">
+
+      <section id="welcome">
+        <div class="mdl-grid welcome section-content">
+          <div class="mdl-cell mdl-cell--12-col">
+            <img class="logo" src="img/electrician-logo.jpg" alt="Bulk Electrical logo" height="180px" align="middle">
+	    <p>Logo background goes here...</p>
+	    <p>+61 0430 335 217</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="mdl-grid about section-content">
+          <div class="mdl-cell mdl-cell--12-col">
+              <h2>About</h2>              
+              <p>Blake is a sick lecco.</p>
+            </div>
+          </div>
+      </section>
+
+      <section id="contact">
+        <div class="mdl-grid section-content">
+          <div class="mdl-cell mdl-cell--12-col">
+              <h2>Contact</h2>
+              <div class="social-media-links">
+                <button class="mdl-button mdl-js-button mdl-button--primary" onclick=" window.open('https://www.facebook.com/bulkelectrical/','_blank')">
+                  <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--primary" onclick=" window.open('https://plus.google.com/b/106901292031766754094/106901292031766754094','_blank')">
+                  <i class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i>
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--primary" onclick=" window.open('https://twitter.com/CelebrateWRikki/','_blank')">
+                  <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--primary" onclick=" window.open('https://linkedin.com/in/celebratewithrikki/','_blank')">
+                  <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                </button>                
+              </div>
+              <br>
+                  <div>
+                  <i class="material-icons mdl-list__item-icon contact-link">phone</i>
+                  <a class="contact-link contact-value" href="tel:+61430335217" data-rel="external">+61 0430 335 217</a>
+                  </div>
+                  <br>
+                  <div>
+                  <i class="material-icons mdl-list__item-icon contact-link">email</i>
+                  <a class="contact-link contact-value" href="mailto:blake@bulkelectrical.com.au" data-rel="external">blake@bulkelectrical.com.au</a>
+                  </div>
+                 
+              <h4>Get in touch</h4>
+                <form action="https://formspree.io/blake@bulkelectrical.com.au" class="" method="post">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" id="Name" name="name" pattern="[A-Z,a-z, ]*" type="text">
+                    <label class="mdl-textfield__label" for="Name">Name</label>
+                    <span class="mdl-textfield__error">Letters and spaces only</span>
+                  </div>
+                  <br>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" id="Email" name="_replyto" type="text">
+                    <label class="mdl-textfield__label" for="Email">Email</label>
+                  </div>
+                  <br>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <textarea class="mdl-textfield__input" id="note" name="note" rows="5"></textarea>
+                    <label class="mdl-textfield__label" for="note">Enter message</label>
+                  </div>
+                  <br>
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">Submit</button>           
+                </form>
+              </div>
+            </div>
+      </section>
+
+    </main>
+</div>
+
+  <!-- Page scripts -->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scroll.js" type="text/javascript"></script>
+    <script src="https://use.fontawesome.com/a04fa2340f.js"></script>
 </body>
 </html>
